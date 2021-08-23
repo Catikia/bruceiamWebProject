@@ -1,5 +1,74 @@
 {% extends 'example.html' %}
 
 {% block content %}
-  <p>Home</p>
+
+<div class="container-fluid">
+    <br>
+    <!-----------------about area ---------------------------------->
+    <div class="container-sm" id="searcharea">
+        <a class="section-anchor" id="searching"></a>
+        <div class="row"> <!-- Start row for searcharea heading -->
+           <div class="col-12" > <!-- Start column size 12 -->
+               <h5>
+                  Find Your Dream Home with Bruce!
+               </h5>
+
+           </div> <!-- End column size 12 -->
+        </div> <!-- End Row for searcharea heading -->
+        <br> <!-- adds space before next section -->
+    </div>
+
+    <!-------------------- Neighborhood area -------------------------------------->
+    <div class="container-sm" id="neighborhood-section"> <!-- Start div container for neighborhood area -->
+        <a class="section-anchor" id="neighborhood"></a>
+        <br>
+        <div class="row"> <!-- Start row for neighborhood heading -->
+            <div class="col-12" > <!-- Start column size 12 -->
+                <h2>Neighborhoods You May Like</h2>
+                <h5>Explore these neighborhoods in [future link to idx or api for city name]</h5>
+            </div> <!-- End column size 12 -->
+        </div> <!-- End Row for neighborhood heading -->
+        <br>
+        <div class="row"> <!-- Start row for neighborhood heading -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for neihborhood name and information]</p>
+            </div> <!-- End column size 4 -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for neihborhood name and information]</p>
+            </div> <!-- End column size 4 -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for neihborhood name and information]</p>
+            </div> <!-- End column size 4 -->
+        </div> <!-- End Row for neighborhood heading -->
+        <br>
+    </div> <!-- End div container for neighborhood area -->
+    <br> <!-- adds space before next section -->
+
+    <!-------------------- Neighborhood area -------------------------------------->
+    <div class="container-sm" id="featured-section"> <!-- Start div container for featured homes area -->
+        <a class="section-anchor" id="featured"></a>
+        <br>
+        <div class="row"> <!-- Start row for featured homes heading -->
+            <div class="col-12" > <!-- Start column size 12 -->
+                <h2>Featured Homes</h2>
+            </div> <!-- End column size 12 -->
+        </div> <!-- End Row for featured homes heading -->
+        <br>
+        <div class="row"> <!-- Start row for featured homes heading -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for featured homes information]</p>
+            </div> <!-- End column size 4 -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for featured homes information]</p>
+            </div> <!-- End column size 4 -->
+            <div class="col-4" > <!-- Start column size 4 -->
+                <p>[future link to idx or api for featured homes information]</p>
+            </div> <!-- End column size 4 -->
+        </div> <!-- End Row for featured homes heading -->
+        <br>
+    </div> <!-- End div container for featured homes area -->
+    <br> <!-- adds space before next section -->
+
+
+</div> <!--end container row -->
 {% endblock %}

@@ -2,16 +2,16 @@
 <html lang="en">
     <!-- Include header -->
     {% include "head.html" %}
+    <body>
+        <!-- Include nav -->
+        {% include "nav.html" %}
 
-    <!-- Include nav -->
-    {% include "nav.html" %}
+        <!-- Embeded content -->
+        {% block content %}
 
-    <!-- Embeded content -->
-    {% block content %}
+        {% endblock %}
 
-    {% endblock %}
-
-    <!-- Include footer -->
-    {% include "footer.html" %}
-
+        <!-- Include footer -->
+        {% include "footer.html" %}
+    </body>
 </html>

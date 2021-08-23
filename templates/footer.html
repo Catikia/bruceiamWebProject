@@ -1,4 +1,64 @@
 
-<!---------------------------Footer Area -------------------------------->
-<p> footer </p>
-</body>
+
+   <!---------------------------Contact Area -------------------------------->
+    <div class="container-fluid" id="contactarea">
+        <div class="container-sm" > <!-- Start div container for contact area -->
+          <a class="section-anchor" id="contact"></a>
+          <br>
+          <div class="row contact"> <!-- Start row for contact area -->
+
+            <div class="col-sm-5"> <!-- Start column size 5 / 4 -->
+              {% load static %}
+              <img src="{% static 'bruceiamWebProject/media/myhomegroup-clearbg-blackgray-315-100.png' %}" alt="My Home Group" width="315" height="100" class="d-inline-block align-text-top"/>
+              Bruce Simmons Jr
+              <div class="navbar-brand2" id="brand2">Real Estate Agent</div>
+              <br>
+              {% load static %}
+                <img src="{% static 'bruceiamWebProject/media/mls-eho-black-160-50.png' %}" alt="Realtor - Multiple Listing Service - Equal Housing Opportunity" width="160" height="50" class="d-inline-block align-text-top"/>
+              <!--  <h4>Contact: Cat</h4>-->
+            </div><!-- End column size 5 -->
+
+            <div class="col-sm-7" id="socials"> <!-- Start column size 7 / 8 -->
+                <h4>Contact Information:</h4>
+
+                <!-- Adds social icons -->
+                <a id="emailme" href="mailto:bruce@bruceiam.com" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/email-30-blackbg-white.png' %}" alt="bruce@bruceiam.com" width="30" height="30" class="d-inline-block align-text-top"/>
+                    bruceiam.com
+                </a>
+                <a id="facebook" href="https://www.facebook.com/bruce.t.simmons" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/facebook-30-bluebg-white.png' %}" alt="facebook.com/bruce.t.simmons" width="30" height="30" class="d-inline-block align-text-top"/>
+                    facebook.com/bruce.t.simmons
+                </a>
+                <a id="twitter" href="https://twitter.com/RealBruceIAm" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/twitter-30-bluebg-white.png' %}" alt="twitter.com/RealBruceIAm" width="30" height="30" class="d-inline-block align-text-top"/>
+                    twitter.com/RealBruceIAm
+                </a>
+                <a id="instagram" href="https://www.instagram.com/realbruceiam" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/instagram-30-blackbg-color.png' %}" alt="instagram.com/realbruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    instagram.com/realbruceiam
+                </a>
+                <a id="twitch" href="https://www.twitch.tv/bruceiam" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/twitch-30-blackbg-color.png' %}" alt="twitch.tv/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    twitch.tv/bruceiam
+                </a>
+                <a id="speedrun" href="https://www.speedrun.com/user/bruceiam" target="_blank">
+                    {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/speedrun-30-blackbg-color.png' %}" alt="speedrun.com/user/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    speedrun.com/user/bruceiam
+                </a>
+
+            </div><!-- End column size 7 / 8 -->
+
+          </div> <!-- End Row for contact area -->
+      </div> <!--end container row -->
+      <br>
+    </div> <!-- End div container for contact area -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
