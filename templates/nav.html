@@ -1,30 +1,24 @@
 
-<nav class="navbar navbar-expand navbar-dark fixed-top ">
+<nav class="navbar navbar-expand navbar-light fixed-top ">
     <div class="container-sm"> <!-- using sm instead of fluid for better alignment -->
         <!-- navigation logo area -->
-        <a class="navbar-brand col-6" id="brand" href="#">
-            {% load static %}
-            <img src="{% static 'bruceiamWebProject/media/myhomegroup-clearbg-blackgray-315-100.png' %}" alt="My Home Group" width="315" height="100" class="d-inline-block align-text-top"/>
-            Bruce Simmons Jr
-            <div class="navbar-brand2" id="brand2">Real Estate Agent</div>
+        <a class="navbar-brand col-6" id="brand" href="home.html">
+            <h2>Bruce Simmons Jr</h2><h3>Real Estate Agent</h3>
         </a>
         <!-- navigation drop-down area -->
         <div class="navbar-nav col-5">
             <div class="nav-item dropdown me-auto">
                 <a class="nav-link dropdown-toggle" href="home.html" id="navbarDropdown"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Future Dropdown
+                  Dropdown
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#neighborhood">search by neighborhood</a></li>
-                    <li><a class="dropdown-item" href="#">#futurePage2</a></li>
-                    <li><a class="dropdown-item" href="#">#futurePage3</a></li>
+                    <li><a class="dropdown-item" href="#searching">search</a></li>
+                    <li><a class="dropdown-item" href="#neighborhood">Neighborhoods</a></li>
+                    <li><a class="dropdown-item" href="#featured">#Featured homes</a></li>
                 </div>
             </div>
-            <!--<div class="nav-item"><!--MLS EHO Realtor graphic - May put in footer instead-->
-            <!--  {% load static %}
-              <img src="{% static 'bruceiamWebProject/media/mls-eho-black-160-50.png' %}" alt="Realtor - Multiple Listing Service - Equal Housing Opportunity" width="160" height="50" class="d-inline-block align-text-top"/>
-            </div>-->
+
         </div><!--end overall nav item div -->
         <!-- Adds social icons/links -->
         <div class="navbar col-sm-1" id="socials">
