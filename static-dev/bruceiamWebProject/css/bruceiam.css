@@ -7,11 +7,26 @@ Style Sheet
 
 /*
 ---color Scheme---
-
+***Retro Blue / Purple Theme***
+4E0064 = Dk Purple/pink
+8A22A7 = Md Purple/pink
+AF3FCE = Lt Purple/pink
+661EA1 = Md Purple
+461E9D = Md Purple/Blue
+301A86 = Dk Purple/Blue
+11116E = Dk Blue
+283597 = Md Blue
+4A6EC6 = Lt/Md Blue
+88B2FF = Lt Blue
 */
 
 /*----------------------Navigation--------------------------------------------*/
 
 /*----------------------main page--------------------------------------------*/
-
-/*---------------------bottom of page-------------------------------------*/
+body {/*configures area behind page*/
+    position: relative;
+    font-family: "sans-serif", Verdana, sans-serif;
+    background: #11116E;
+    margin-top: 5em;
+}
+/*--------------------- footer -------------------------------------*/
