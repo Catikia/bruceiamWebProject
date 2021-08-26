@@ -1,57 +1,69 @@
-<div class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<div class="container-fluid" id="navarea">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
         <div class="container-sm">
 
             <!-- Brand area -->
-            <div class="navbar col-sm-5" id="brand">
-                <a class="navbar-brand">
+            <div class="navbar col-sm-6" id="brand">
+                <div class="navbar-brand">
                   <h2>Bruce Simmons Jr</h2>
                   <h4>Real Estate Agent</h4>
-                </a>
-            </div>
-
-            <!-- social icons/links -->
-            <div class="navbar col-lg-2" id="socials">
-                <a id="emailme" href="mailto:bruce@bruceiam.com" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/email-30-blackbg-white.png' %}" alt="bruce@bruceiam.com" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a>
-                <!-- facebook hacked - editing out until recovered
-                <a id="facebook" href="https://www.facebook.com/bruce.t.simmons" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/facebook-30-bluebg-white.png' %}" alt="facebook.com/bruce.t.simmons" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a> -->
-                <a id="twitter" href="https://twitter.com/RealBruceIAm" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/twitter-30-bluebg-white.png' %}" alt="twitter.com/RealBruceIAm" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a>
-                <a id="instagram" href="https://www.instagram.com/realbruceiam" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/instagram-30-blackbg-color.png' %}" alt="instagram.com/realbruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a>
-                <a id="twitch" href="https://www.twitch.tv/bruceiam" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/twitch-30-blackbg-color.png' %}" alt="twitch.tv/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a>
-                <a id="speedrun" href="https://www.speedrun.com/user/bruceiam" target="_blank">
-                  {% load static %}
-                    <img src="{% static 'bruceiamWebProject/media/speedrun-30-blackbg-color.png' %}" alt="speedrun.com/user/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
-                </a>
-            </div><!--end socials div -->
-
-            <!-- buttons and collapse button area -->
-            <div class="navbar col-lg-flex">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <form class="navbar-nav">
-                      <button class="btn btn-outline-success" type="submit">Login</button>
-                      <button class="btn btn-outline-success" type="submit">Sign up</button>
-                    </form>
                 </div>
-            </div><!--end buttons area div -->
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+                <div class="navbar d-flex">
+                  <div class="flex-nowrap" id="socials">
+                    <a id="emailme" href="mailto:bruce@bruceiam.com" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/email-30-blackbg-white.png' %}" alt="bruce@bruceiam.com" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                    <!-- facebook hacked - Need to change link once recovered -->
+                    <a id="facebook" href="https://www.facebook.com/bruce.t.simmons" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/facebook-30-bluebg-white.png' %}" alt="facebook.com/bruce.t.simmons" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                    <a id="twitter" href="https://twitter.com/RealBruceIAm" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/twitter-30-bluebg-white.png' %}" alt="twitter.com/RealBruceIAm" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                    <a id="instagram" href="https://www.instagram.com/realbruceiam" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/instagram-30-blackbg-color.png' %}" alt="instagram.com/realbruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                    <a id="twitch" href="https://www.twitch.tv/bruceiam" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/twitch-30-blackbg-color.png' %}" alt="twitch.tv/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                    <a id="speedrun" href="https://www.speedrun.com/user/bruceiam" target="_blank">
+                      {% load static %}
+                        <img src="{% static 'bruceiamWebProject/media/speedrun-30-blackbg-color.png' %}" alt="speedrun.com/user/bruceiam" width="30" height="30" class="d-inline-block align-text-top"/>
+                    </a>
+                </div
+                <!-- buttons area -->
+                <div id="signup">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" >
+                        Sign up
+                    </button>
+                </div>
+              </div><!--end nav items div -->
+
+            </div><!--end collapse div -->
 
         </div><!-- end container-sm div -->
     </nav><!-- end nav -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Bruce wants to help you.  Sign up below so he can help!</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>First Name: </p>
+            <p>Last Name: </p>
+            <p>Phone Number: </p>
+            <p>Email Address: </p>
+        </div>
+    </div>
 </div><!-- end container-fluid div -->

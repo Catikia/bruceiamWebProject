@@ -22,11 +22,136 @@ AF3FCE = Lt Purple/pink
 
 /*----------------------Navigation--------------------------------------------*/
 
+nav { /* retro border */
+  background-color: #88B2FF;
+  box-shadow: 0px 0px 0px 1px #4E0064, 0px 0px 0px 4px #4E0064 inset,
+  0px 0px 0px 8px #8A22A7 inset, 0px 0px 0px 12px #AF3FCE inset,
+  0px 0px 0px 16px #661EA1 inset, 0px 0px 0px 20px #461E9D inset,
+  0px 0px 0px 24px #301A86 inset, 0px 0px 0px 28px #11116E inset,
+  0px 0px 0px 32px #283597 inset, 0px 0px 0px 36px #4A6EC6 inset;
+  font-family: "sans-serif", Verdana, sans-serif;
+  color: #11116E; /*font color for non links*/
+}
+.navbar {
+  padding: 18px 25px 18px 15px; /* padding to keep everything off inset border */
+}
+
+#brand .navbar-brand h2, h4 {/* color of brand (bruce's name) */
+  color:  #11116E;
+}
+
+#socials {
+  padding: 1px 1px 1px 1px;/* add space between social icons */
+}
+#socials a:link {
+    opacity: 1;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=100);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Triggers "hasLayout" in IE 7 and lower */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color:  #11116E;
+    text-decoration: none;
+}
+#socials a:link:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color:  #AF3FCE;
+    text-decoration: none;
+}
+#signup {
+  padding-left: 6px;
+}
+#signup .btn {
+  background-color: #283597;
+  color:  #ffffff;
+}
+#signup .btn:hover {
+  background-color: #4E0064;
+  transition: all 0.3s ease;
+/*  color:  #AF3FCE;*/
+}
 /*----------------------main page--------------------------------------------*/
 body {/*configures area behind page*/
     position: relative;
     font-family: "sans-serif", Verdana, sans-serif;
     background: #11116E;
-    margin-top: 5em;
+    margin-top: 8em;
+}
+.section-anchor { /* lines up scrolling for navigation section links */
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    /*visibility: hidden;*/
+    top: -8em; /* minus the height of the top navigation */
+}
+#searcharea {
+  text-align: center;
+}
+
+/*--------------------Neighborhood area-------------------------------------------*/
+#neighborhood-section h2 {
+    text-align: center;
+}
+#neighborhood-section {
+  background: #661EA1; /* background behind neighborhood area */
+  border-radius: 50% 3% / 3% 40%;
+}
+
+/*--------------------Featured Homes area-------------------------------------------*/
+#featured-section h2 {
+    text-align: center;
+}
+#featured-section {
+  background: #661EA1; /* background behind featured homes area */
+  border-radius: 50% 3% / 3% 40%;
 }
 /*--------------------- footer -------------------------------------*/
+#contactarea {
+  background-color: #88B2FF;
+  box-shadow: 0px 0px 0px 1px #4E0064, 0px 0px 0px 4px #4E0064 inset,
+  0px 0px 0px 8px #8A22A7 inset, 0px 0px 0px 12px #AF3FCE inset,
+  0px 0px 0px 16px #661EA1 inset, 0px 0px 0px 20px #461E9D inset,
+  0px 0px 0px 24px #301A86 inset, 0px 0px 0px 28px #11116E inset,
+  0px 0px 0px 32px #283597 inset, 0px 0px 0px 36px #4A6EC6 inset;
+  font-family: "sans-serif", Verdana, sans-serif;
+  color: #11116E; /*font color for non links*/
+}
+.contact {
+  padding: 18px 25px 18px 15px; /* padding to keep everything off inset border */
+}
+
+.contact a {
+    opacity: 1;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=100);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Triggers "hasLayout" in IE 7 and lower */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color: #11116E; /*font color*/
+}
+.contact a:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color: #283597; /*font color*/
+}
+.contact a:visited {
+    opacity: .8;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=80);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-5%, -5%);
+    transition: all 0.3s ease;
+    color: #11116E; /*font color*/
+}
+.contact a:visited:hover {
+    opacity: 0.5;  /* Opacity for Modern Browsers */
+    filter: alpha(opacity=50);  /* Opacity for IE8 and lower */
+    zoom: 1;  /* Fix for IE7 */
+    transform: translate(-15%, -15%);
+    transition: all 0.3s ease;
+    color: #283597; /*font color*/
+}
