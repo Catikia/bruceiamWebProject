@@ -118,10 +118,10 @@ body {/*configures area behind page*/
   0px 0px 0px 32px #283597 inset, 0px 0px 0px 36px #4A6EC6 inset;
   font-family: "sans-serif", Verdana, sans-serif;
   color: #11116E; /*font color for non links*/
+  padding: 5px 30px 15px 40px;
+  position: relative;
 }
-.contact {
-  padding: 18px 25px 18px 15px; /* padding to keep everything off inset border */
-}
+
 
 .contact a {
     opacity: 1;  /* Opacity for Modern Browsers */
@@ -154,4 +154,27 @@ body {/*configures area behind page*/
     transform: translate(-15%, -15%);
     transition: all 0.3s ease;
     color: #283597; /*font color*/
+}
+
+h2, h4 {/* color of name) */
+  color: #11116E;
+  text-align: center;
+}
+
+#socials p {
+  display: none;
+}
+
+#socials br {
+  display: none;
+}
+
+/* Apply styles starting from medium devices going up */
+@media (min-width: 768px){
+  #socials p {
+    display: inline-flex;
+  }
+  #socials br {
+    display:inline-block;
+  }
 }
