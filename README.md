@@ -1,3 +1,3 @@
 # bruceiamWebProject
 
-This will be a realty website for bruceiam.com
+This will be a realty website
